@@ -1,5 +1,5 @@
 import { Typography } from "@mui/material";
 
 export default function HomePage() {
-  return <Typography>ciao</Typography>;
+  return <Typography variant="h4">Optimus</Typography>;
 }
