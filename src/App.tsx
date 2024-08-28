@@ -1,9 +1,24 @@
-import { Box, Stack, Typography } from "@mui/material";
+import { Box, Stack, ThemeOptions, Typography } from "@mui/material";
 import { OptimusUiApp } from "optimus-bo-ui";
 import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 import { mainBlack, mainYellow } from "./core/colors";
 import "./fonts.css";
 import HomePage from "./pagine/HomePage";
+
+function makeTheme(): ThemeOptions {
+  return {
+    palette: {
+      mode: "dark",
+      primary: {
+        main: mainYellow,
+      },
+    },
+    typography: {
+      fontFamily: "ApfelGrotezk",
+      fontSize: 18,
+    },
+  };
+}
 
 function App() {
   return (
@@ -11,19 +26,7 @@ function App() {
       <OptimusUiApp
         muiConfiguration={{
           configure: true,
-          makeTheme: () => {
-            return {
-              palette: {
-                mode: "dark",
-                primary: {
-                  main: mainYellow,
-                },
-              },
-              typography: {
-                fontFamily: "ApfelGrotezk",
-              },
-            };
-          },
+          makeTheme: makeTheme,
         }}
         layoutConfiguration={{
           configure: true,

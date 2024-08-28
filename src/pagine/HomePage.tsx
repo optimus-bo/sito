@@ -1,5 +1,10 @@
-import { Typography } from "@mui/material";
+import { Stack } from "@mui/material";
+import AreaIntroduzione from "../core/AreaIntroduzione";
 
 export default function HomePage() {
-  return <Typography variant="h4">Optimus</Typography>;
+  return (
+    <Stack>
+      <AreaIntroduzione />
+    </Stack>
+  );
 }
