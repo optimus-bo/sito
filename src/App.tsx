@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Stack, Typography } from "@mui/material";
 import { OptimusUiApp } from "optimus-bo-ui";
 import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 import { mainBlack, mainYellow } from "./core/colors";
@@ -33,25 +33,25 @@ function App() {
               enableDrawer: false,
               navbarStyling: "solid",
               header: (
-                <Box sx={{ height: "100%" }}>
-                  <Link
-                    to="/"
-                    style={{
-                      textDecoration: "none",
-                      color: mainBlack,
-                      height: "100%",
-                    }}
-                  >
-                    {/* <Box
+                <Link
+                  to="/"
+                  style={{
+                    textDecoration: "none",
+                    color: mainBlack,
+                    height: "100%",
+                  }}
+                >
+                  <Stack direction="row" alignItems="center" spacing={1}>
+                    <Box
                       component="img"
                       src="/logo.png"
-                      sx={{ height: "100%" }}
-                    /> */}
+                      sx={{ height: "3em" }}
+                    />
                     <Typography variant="h4" fontWeight="bold">
                       OPTIMUS
                     </Typography>
-                  </Link>
-                </Box>
+                  </Stack>
+                </Link>
               ),
             },
           },
