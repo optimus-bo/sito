@@ -1,11 +1,12 @@
-import { Paper, Typography } from "@mui/material";
-import { PropsWithChildren } from "react";
+import { Paper, Stack, SvgIconProps, Typography } from "@mui/material";
+import { ComponentType, PropsWithChildren } from "react";
 
 type ServizioProps = PropsWithChildren & {
   titolo: string;
+  Icona: ComponentType<SvgIconProps>;
 };
 
-export default function Servizio({ titolo, children }: ServizioProps) {
+export default function Servizio({ titolo, children, Icona }: ServizioProps) {
   const testo = children;
 
   return (
@@ -23,9 +24,13 @@ export default function Servizio({ titolo, children }: ServizioProps) {
       }}
       elevation={8}
     >
-      <Typography color="primary.main" fontWeight="bold" fontSize="larger">
-        {titolo}
-      </Typography>
+      <Stack direction="row" spacing={1} alignItems="center">
+        {<Icona color="primary" />}
+        <Typography color="primary.main" fontWeight="bold" fontSize="larger">
+          {titolo}
+        </Typography>
+      </Stack>
+
       <Typography>{testo}</Typography>
     </Paper>
   );

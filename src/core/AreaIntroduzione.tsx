@@ -1,3 +1,7 @@
+import CategoryIcon from "@mui/icons-material/Category";
+import DescriptionIcon from "@mui/icons-material/Description";
+import SearchIcon from "@mui/icons-material/Search";
+import WarehouseIcon from "@mui/icons-material/Warehouse";
 import { Grid, Stack, Typography } from "@mui/material";
 import Servizio from "./Servizio";
 
@@ -18,14 +22,14 @@ export default function AreaIntroduzione() {
 
       <Grid container spacing={2} paddingRight={4}>
         <Grid item xs={12} sm={6}>
-          <Servizio titolo="Consulenza Strategica e Tecnica">
+          <Servizio titolo="Consulenza Strategica e Tecnica" Icona={SearchIcon}>
             Identifichiamo le aree con potenzialità di automazione, individuiamo
             tecniche e strumenti per automatizzare i processi critici e aiutiamo
             i clienti a sfruttare al meglio gli strumenti che già possiedono.
           </Servizio>
         </Grid>
         <Grid item xs={12} sm={6}>
-          <Servizio titolo="Gestione Ordini e Magazzino">
+          <Servizio titolo="Gestione Ordini e Magazzino" Icona={WarehouseIcon}>
             Automatizziamo la gestione di informazioni relative agli ordini di
             acquisto e di vendita, la compilazione di file, il censimento e
             monitoraggio del magazzino e la comunicazione con produzione,
@@ -33,14 +37,14 @@ export default function AreaIntroduzione() {
           </Servizio>
         </Grid>
         <Grid item xs={12} sm={6}>
-          <Servizio titolo="Reportistica">
+          <Servizio titolo="Reportistica" Icona={DescriptionIcon}>
             Automatizziamo le attività di raccolta ed elaborazione di dati e la
             produzione di documenti di reportistica ad uso interno ed esterno,
             nel formato necessario alle specifiche esigenze del cliente.
           </Servizio>
         </Grid>
         <Grid item xs={12} sm={6}>
-          <Servizio titolo="Altri Servizi">
+          <Servizio titolo="Altri Servizi" Icona={CategoryIcon}>
             Forniamo ulteriori servizi propedeutici e complementari
             all’automazione di processi, come la digitalizzazione delle
             informazioni cartacee, la migrazione di informazioni in Cloud e lo
