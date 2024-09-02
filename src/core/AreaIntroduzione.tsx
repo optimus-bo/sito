@@ -1,4 +1,4 @@
-import { Stack, Typography } from "@mui/material";
+import { Grid, Stack, Typography } from "@mui/material";
 import Servizio from "./Servizio";
 
 export default function AreaIntroduzione() {
@@ -22,28 +22,38 @@ export default function AreaIntroduzione() {
         già presenti in casa.
       </Typography>
 
-      <Servizio titolo="Consulenza Strategica e Tecnica">
-        Identifichiamo le aree con potenzialità di automazione, individuiamo
-        tecniche e strumenti per automatizzare i processi critici e aiutiamo i
-        clienti a sfruttare al meglio gli strumenti che già possiedono.
-      </Servizio>
-      <Servizio titolo="Gestione Ordini e Magazzino">
-        Automatizziamo la gestione di informazioni relative agli ordini di
-        acquisto e di vendita, la compilazione di file, il censimento e
-        monitoraggio del magazzino e la comunicazione con produzione, clienti e
-        fornitori.
-      </Servizio>
-      <Servizio titolo="Reportistica">
-        Automatizziamo le attività di raccolta ed elaborazione di dati e la
-        produzione di documenti di reportistica ad uso interno ed esterno, nel
-        formato necessario alle specifiche esigenze del cliente.
-      </Servizio>
-      <Servizio titolo="Altri Servizi">
-        Forniamo ulteriori servizi propedeutici e complementari all’automazione
-        di processi, come la digitalizzazione delle informazioni cartacee, la
-        migrazione di informazioni in Cloud e lo sviluppo di applicazioni e siti
-        web.
-      </Servizio>
+      <Grid container spacing={2}>
+        <Grid item xs={6}>
+          <Servizio titolo="Consulenza Strategica e Tecnica">
+            Identifichiamo le aree con potenzialità di automazione, individuiamo
+            tecniche e strumenti per automatizzare i processi critici e aiutiamo
+            i clienti a sfruttare al meglio gli strumenti che già possiedono.
+          </Servizio>
+        </Grid>
+        <Grid item xs={6}>
+          <Servizio titolo="Gestione Ordini e Magazzino">
+            Automatizziamo la gestione di informazioni relative agli ordini di
+            acquisto e di vendita, la compilazione di file, il censimento e
+            monitoraggio del magazzino e la comunicazione con produzione,
+            clienti e fornitori.
+          </Servizio>
+        </Grid>
+        <Grid item xs={6}>
+          <Servizio titolo="Reportistica">
+            Automatizziamo le attività di raccolta ed elaborazione di dati e la
+            produzione di documenti di reportistica ad uso interno ed esterno,
+            nel formato necessario alle specifiche esigenze del cliente.
+          </Servizio>
+        </Grid>
+        <Grid item xs={6}>
+          <Servizio titolo="Altri Servizi">
+            Forniamo ulteriori servizi propedeutici e complementari
+            all’automazione di processi, come la digitalizzazione delle
+            informazioni cartacee, la migrazione di informazioni in Cloud e lo
+            sviluppo di applicazioni e siti web.
+          </Servizio>
+        </Grid>
+      </Grid>
     </Stack>
   );
 }
