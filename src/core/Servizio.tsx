@@ -12,7 +12,6 @@ export default function Servizio({ titolo, children }: ServizioProps) {
     <Paper
       sx={{
         padding: 2,
-        //fontSize="larger" del titolo fa si che prenda più spazio di margine
         //quindi riduco il padding dal suo lato
         paddingTop: 1,
         border: 1,
