@@ -3,13 +3,7 @@ import Servizio from "./Servizio";
 
 export default function AreaIntroduzione() {
   return (
-    <Stack
-      padding={2}
-      spacing={2}
-      sx={{
-        maxWidth: 1000,
-      }}
-    >
+    <Stack spacing={2}>
       <Typography>
         Optimus nasce con l’obiettivo di aiutare le imprese ad automatizzare le
         attività ripetitive lungo tutti i processi aziendali. Dalla gestione
@@ -22,15 +16,15 @@ export default function AreaIntroduzione() {
         già presenti in casa.
       </Typography>
 
-      <Grid container spacing={2}>
-        <Grid item xs={6}>
+      <Grid container spacing={2} paddingRight={4}>
+        <Grid item xs={12} sm={6}>
           <Servizio titolo="Consulenza Strategica e Tecnica">
             Identifichiamo le aree con potenzialità di automazione, individuiamo
             tecniche e strumenti per automatizzare i processi critici e aiutiamo
             i clienti a sfruttare al meglio gli strumenti che già possiedono.
           </Servizio>
         </Grid>
-        <Grid item xs={6}>
+        <Grid item xs={12} sm={6}>
           <Servizio titolo="Gestione Ordini e Magazzino">
             Automatizziamo la gestione di informazioni relative agli ordini di
             acquisto e di vendita, la compilazione di file, il censimento e
@@ -38,14 +32,14 @@ export default function AreaIntroduzione() {
             clienti e fornitori.
           </Servizio>
         </Grid>
-        <Grid item xs={6}>
+        <Grid item xs={12} sm={6}>
           <Servizio titolo="Reportistica">
             Automatizziamo le attività di raccolta ed elaborazione di dati e la
             produzione di documenti di reportistica ad uso interno ed esterno,
             nel formato necessario alle specifiche esigenze del cliente.
           </Servizio>
         </Grid>
-        <Grid item xs={6}>
+        <Grid item xs={12} sm={6}>
           <Servizio titolo="Altri Servizi">
             Forniamo ulteriori servizi propedeutici e complementari
             all’automazione di processi, come la digitalizzazione delle
