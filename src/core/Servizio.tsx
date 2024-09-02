@@ -19,6 +19,7 @@ export default function Servizio({ titolo, children }: ServizioProps) {
         borderRadius: 2,
         borderColor: "primary.main",
         backgroundColor: "black",
+        height: "100%",
       }}
       elevation={8}
     >
