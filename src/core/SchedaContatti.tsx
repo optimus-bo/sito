@@ -1,5 +1,5 @@
 import AttachEmailIcon from "@mui/icons-material/AttachEmail";
-import CallIcon from "@mui/icons-material/Call";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { Link, Paper, Stack, Typography } from "@mui/material";
 import { mainYellow } from "./colors";
 
@@ -39,7 +39,7 @@ export default function SchedaContatti() {
       </Typography>
 
       <Stack direction="row" alignItems="center" spacing={1} marginTop={3}>
-        <CallIcon fontSize="small" />
+        <LinkedInIcon fontSize="small" />
         <Typography fontSize="large" fontWeight="bold">
           LinkedIn:{" "}
           <Link href="https://www.linkedin.com/company/optimus-rpa/posts/?feedView=all">
