@@ -13,7 +13,7 @@ export default function AreaIntroduzione() {
         attività ripetitive lungo tutti i processi aziendali. Dalla gestione
         degli ordini e dei magazzini alle attività di reportistica e
         monitoraggio interno, aiutiamo le aziende a trovare le migliori
-        soluzioni per digitalizzare e automatizzare le attività, aumentando la
+        soluzioni per digitalizzare ed automatizzare le attività, aumentando la
         produttività della forza lavoro. Offrendo sia servizi di consulenza che
         sviluppo software, troviamo soluzioni flessibili per i nostri clienti,
         che si adattano alle metodologie di lavoro e agli applicativi gestionali
