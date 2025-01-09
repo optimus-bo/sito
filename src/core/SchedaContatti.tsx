@@ -1,7 +1,9 @@
 import AttachEmailIcon from "@mui/icons-material/AttachEmail";
+import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import { Link, Paper, Stack, Typography } from "@mui/material";
+import { Paper, Typography } from "@mui/material";
 import { mainYellow } from "./colors";
+import Contatto from "./Contatto";
 
 export default function SchedaContatti() {
   return (
@@ -20,37 +22,31 @@ export default function SchedaContatti() {
       <Typography variant="h4" fontWeight="bold" color="primary.main">
         Contatti
       </Typography>
-      <Stack
-        direction="row"
-        alignItems="center"
-        alignContent="center"
-        spacing={1}
-        marginTop={3}
-      >
-        <AttachEmailIcon fontSize="small" />
-        <Typography fontSize="large" fontWeight="bold">
-          Mail:{" "}
-          <Link href="mailto:optimus.rpa@gmail.com">optimus.rpa@gmail.com</Link>
-        </Typography>
-      </Stack>
-      <Typography variant="subtitle2" marginLeft={4}>
-        E-Mail per OptimusRPA per mettersi in contatto con noi e richiedere i
-        nostri servizi
-      </Typography>
+      <Contatto
+        icona={<AttachEmailIcon fontSize="small" />}
+        titolo="Mail"
+        link="mailto:optimus.rpa@gmail.com"
+        testoLink="optimus.rpa@gmail.com"
+        descrizione="E-Mail per OptimusRPA per mettersi in contatto con noi e richiedere i
+        nostri servizi"
+      />
 
-      <Stack direction="row" alignItems="center" spacing={1} marginTop={3}>
-        <LinkedInIcon fontSize="small" />
-        <Typography fontSize="large" fontWeight="bold">
-          LinkedIn:{" "}
-          <Link href="https://www.linkedin.com/company/optimus-rpa/posts/?feedView=all">
-            Optimus RPA
-          </Link>
-        </Typography>
-      </Stack>
-      <Typography variant="subtitle2" marginLeft={4}>
-        Seguici su LinkedIn per metterti in contatto con noi e rimanere
-        aggiornato sui nostri servizi
-      </Typography>
+      <Contatto
+        icona={<LinkedInIcon fontSize="small" />}
+        titolo="LinkedIn"
+        link="https://www.linkedin.com/company/optimus-rpa/posts/?feedView=all"
+        testoLink="Optimus RPA"
+        descrizione="Seguici su LinkedIn per metterti in contatto con noi e rimanere
+        aggiornato sui nostri servizi"
+      />
+
+      <Contatto
+        icona={<InstagramIcon fontSize="small" />}
+        titolo="Instagram"
+        link="https://www.instagram.com/optimus_rpa/"
+        testoLink="Optimus RPA"
+        descrizione="Seguici su Instagram per scoprire i nostri contenuti e le nostre novità"
+      />
     </Paper>
   );
 }
